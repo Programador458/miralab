@@ -13,7 +13,7 @@ body{padding-top:70px;}
 /*** HERO ***/
 .hero{
   height:85vh;
-  background:url("imagens/slide-principal3.jpg.png") center/cover no-repeat;
+  background:url("imagens/slide-principal3.png") center/cover no-repeat;
   position:relative;
 }
 .hero::before{
