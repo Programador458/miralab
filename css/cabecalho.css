@@ -1,0 +1,18 @@
+.navbar-toggler {
+  transition: all 0.3s ease;
+}
+
+.navbar-toggler-icon {
+  transition: all 0.3s ease;
+}
+
+.navbar-collapse {
+  transition: all 0.3s ease;
+}
+
+@media (max-width: 992px) {
+  .navbar-collapse {
+    background-color: #f8f9fa;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+}

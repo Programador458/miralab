@@ -1,0 +1,22 @@
+.bi-telephone-fill{
+    color: blue;
+}
+
+.bi-question-circle-fill{
+     color: blue;
+    }
+    
+.bi-house-fill{
+    color: blue;
+}
+
+.bi-person-plus-fill{
+    color: yellow;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+

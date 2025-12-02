@@ -1,0 +1,116 @@
+:root{
+  --red:#8b0000;
+  --yellow:#fed700;
+}
+
+/*** GERAL ***/
+body{padding-top:70px;}
+
+/*** NAVBAR ***/
+.brand-img{width:50px;height:50px;border-radius:8px;object-fit:cover;}
+.brand-name{color:var(--yellow);font-weight:700;font-size:1.25rem;}
+
+/*** HERO ***/
+.hero{
+  height:85vh;
+  background:url("../imagens/slide-principal3.jpg.png") center/cover no-repeat;
+  position:relative;
+}
+.hero::before{
+  content:"";
+  position:absolute;inset:0;
+  background:rgba(0,0,0,0.55);
+}
+.hero > div{position:relative;}
+.text-yellow{color:var(--yellow);}
+.title-shadow{text-shadow:3px 4px 10px #000;}
+
+/*** SERVIÇOS ***/
+.section-title{
+  color:var(--red);
+  font-weight:800;
+  text-shadow:1px 1px #00000020;
+}
+.service-card{
+  border:none;
+  border-radius:14px;
+  overflow:hidden;
+  transition:.3s;
+}
+.service-card:hover{
+  transform:translateY(-6px);
+  box-shadow:0 8px 25px rgba(0,0,0,0.2);
+}
+.card-title{font-weight:600;color:var(--red);}
+
+/*** CAROUSEL ***/
+.carousel-section{padding:50px 0;background:#f7f7f7;}
+.carousel-inner img{height:430px;object-fit:cover;}
+.carousel-control-prev-icon,
+.carousel-control-next-icon{filter:invert(1);}
+
+/*** FOOTER ***/
+footer{font-size:.9rem;}
+
+
+/* Rodapé animado com transição de cores */
+    /* ---------- FOOTER ---------- */
+    footer {
+      background: linear-gradient(90deg, #8b0000, #fed700);
+      color: #fff;
+      text-align: center;
+      padding: 30px 15px;
+      transition: background 3s ease-in-out;
+    }
+
+    footer a {
+      color: #fff;
+      margin: 0 10px;
+      font-size: 1.25rem;
+      transition: color 0.3s;
+    }
+
+    footer a:hover {
+      color: #000;
+    }
+
+    @media (max-width: 768px) {
+      .hero-about h1 {
+        font-size: 2.2rem;
+      }
+      .hero-about p {
+        font-size: 1rem;
+      }
+      ul.values-list {
+        flex-direction: column;
+        gap: 10px;
+      }
+    }
+
+/* Seção de Contactos */
+#contactos {
+  background-color: #f8f9fa;
+}
+
+.contact-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-color: #fff;
+}
+
+.contact-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+
+.contact-card i {
+  font-size: 2.5rem;
+}
+
+.contact-card h5 {
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.contact-card p {
+  margin-bottom: 0;
+}

@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sobre — Miralab</title>
+  <link rel="icon" href="imagens/logo-transparente.jpg.png">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/bootstrap-icons.css">
+  <style>
+    /* ---------- RESET E BASE ---------- */
+    body {
+      font-family: 'Poppins', sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+      background-color: #f8f9fa;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    h1, h2, h3 {
+      font-weight: 700;
+    }
+
+    /* ---------- NAVBAR ---------- */
+    .navbar {
+      background-color: rgba(139,0,0,0.95);
+    }
+
+    .navbar .nav-link {
+      color: #fed700;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    .navbar .nav-link:hover {
+      color: #ffffff;
+    }
+
+    .navbar-brand span {
+      font-weight: bold;
+      color: #fed700;
+    }
+
+    /* ---------- HERO ---------- */
+    .hero-about {
+      min-height: 60vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: #fff;
+      background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('imagens/slide-principal3.jpg.png') center/cover no-repeat;
+      padding: 100px 15px;
+    }
+
+    .hero-about h1 {
+      font-size: 3rem;
+      margin-bottom: 15px;
+      text-shadow: 2px 2px 6px rgba(0,0,0,0.7);
+    }
+
+    .hero-about p {
+      font-size: 1.25rem;
+      text-shadow: 1px 1px 4px rgba(0,0,0,0.6);
+    }
+
+    /* ---------- MAIN ---------- */
+    main {
+      padding: 60px 15px;
+    }
+
+    main h2.section-title {
+      text-align: center;
+      margin-bottom: 30px;
+      color: #8b0000;
+    }
+
+    main h3 {
+      margin-top: 30px;
+      color: #dc3545;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .about-content p {
+      max-width: 700px;
+      margin-bottom: 20px;
+      color: #555;
+    }
+
+    .about-content img {
+      max-width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    }
+
+    ul.values-list {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+    }
+
+    ul.values-list li {
+      background-color: #fed700;
+      color: #8b0000;
+      font-weight: 600;
+      padding: 10px 20px;
+      border-radius: 50px;
+      transition: transform 0.3s;
+    }
+
+    ul.values-list li:hover {
+      transform: scale(1.1);
+    }
+
+    /* ---------- FOOTER ---------- */
+    footer {
+      background: linear-gradient(90deg, #8b0000, #fed700);
+      color: #fff;
+      text-align: center;
+      padding: 30px 15px;
+      transition: background 3s ease-in-out;
+    }
+
+    footer a {
+      color: #fff;
+      margin: 0 10px;
+      font-size: 1.25rem;
+      transition: color 0.3s;
+    }
+
+    footer a:hover {
+      color: #000;
+    }
+
+    @media (max-width: 768px) {
+      .hero-about h1 {
+        font-size: 2.2rem;
+      }
+      .hero-about p {
+        font-size: 1rem;
+      }
+      ul.values-list {
+        flex-direction: column;
+        gap: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top shadow-sm">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="index.html">
+        <img src="imagens/logo-transparente.jpg.png" alt="logo" class="brand-img me-2" width="50">
+        <span class="brand-name">Miralab</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu2">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu2">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="index.html"><i class="bi bi-house-door-fill me-1"></i>Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="index.html#servicos"><i class="bi bi-tools me-1"></i>Serviços</a></li>
+          <li class="nav-item"><a class="nav-link" href="index.html#projetos"><i class="bi bi-kanban-fill me-1"></i>Projetos</a></li>
+          <li class="nav-item"><a class="nav-link active" href="#"><i class="bi bi-info-circle-fill me-1"></i>Sobre Nós</a></li>
+          <li class="nav-item"><a class="nav-link" href="index.html#contactos"><i class="bi bi-envelope-fill me-1"></i>Contactos</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header class="hero-about">
+    <div class="container">
+      <h1>Sobre a Miralab</h1>
+      <p>Criatividade, estratégia e execução para sua marca</p>
+    </div>
+  </header>
+
+  <!-- MAIN -->
+  <main class="container about-content">
+    <section class="row align-items-center my-5">
+      <div class="col-md-6">
+        <h2 class="section-title">Quem Somos</h2>
+        <p>Miralab é um estúdio criativo fundado por Filimua que combina design, fotografia e marketing digital para ajudar pequenas e médias empresas a crescerem. Trabalhamos desde a identidade visual até campanhas completas de marketing.</p>
+        <h3><i class="bi bi-bullseye"></i> Missão</h3>
+        <p>Entregar soluções visuais e digitais que aumentem a percepção de marca e as vendas dos nossos clientes.</p>
+        <h3><i class="bi bi-eye-fill"></i> Visão</h3>
+        <p>Ser referência em criatividade local e em execução de campanhas digitais eficientes.</p>
+      </div>
+      <div class="col-md-6 text-center">
+        <img src="imagens/slide-principal3.jpg.png" alt="Foto equipe">
+      </div>
+    </section>
+
+    <section class="text-center my-5">
+      <h2 class="section-title">Valores</h2>
+      <ul class="values-list">
+        <li><i class="bi bi-star-fill me-1"></i>Qualidade</li>
+        <li><i class="bi bi-hand-thumbs-up-fill me-1"></i>Compromisso</li>
+        <li><i class="bi bi-shield-fill-check me-1"></i>Transparência</li>
+        <li><i class="bi bi-lightning-fill me-1"></i>Inovação</li>
+      </ul>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="mb-2">
+      <a href="https://wa.me/244927332118" target="_blank"><i class="bi bi-whatsapp"></i></a>
+      <a href="https://www.facebook.com/profile.php?id=61578739527000" target="_blank"><i class="bi bi-facebook"></i></a>
+    </div>
+    <div>
+      <p class="mb-1">© 2025 Miralab — Todos os direitos reservados</p>
+      <p font-size: 15px; class="mb-0">Desenvolvido por <a href=" https://programador458.github.io/Filimua_protifolio/">Filipe João Mateus</a> • Email: programadorxx27@gmail.com</p>
+    </div>
+  </footer>
+
+  <script src="js/bootstrap.bundle.js"></script>
+</body>
+</html>
